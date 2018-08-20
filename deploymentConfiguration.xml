@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<endPoints>
+    <endpoint>
+        <name></name>
+        <ip></ip>
+        <config type="du"></config>
+
+    </endpoint>
+</endPoints>

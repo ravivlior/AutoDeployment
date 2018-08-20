@@ -2,26 +2,26 @@ import shutil
 import xml.etree.ElementTree
 import os
 
+## delete file
+# if os.path.exists('/home/ravivl/PycharmProjects/db/2/file.xml'):
+#   os.remove('/home/ravivl/PycharmProjects/db/2/file.xml')
+# else:
+#   print("The file does not exist")
+
 ## copy files
 # src = "/home/ravivl/PycharmProjects/db/1/data.txt"
 # dst = "/home/ravivl/PycharmProjects/db/2"
 # shutil.copy2(src,dst)
 
-## delete file
-# if os.path.exists('/home/ravivl/PycharmProjects/db/1/file_new.xml'):
-#   os.remove('/home/ravivl/PycharmProjects/db/1/file_new.xml')
-# else:
-#   print("The file does not exist")
-
 ## delete folder
-# shutil.rmtree('/home/ravivl/PycharmProjects/db/1/dataFolder')
+# shutil.rmtree('/home/ravivl/PycharmProjects/db/2/DataFolder')
 
 ## create folder
-#os.mkdir ('/home/ravivl/PycharmProjects/db/1/dataFolder')
+# os.mkdir ('/home/ravivl/PycharmProjects/db/2/dataFolder1')
 
 ## copy folder
 # src = "/home/ravivl/PycharmProjects/db/1/dataFolder"
-# dst = "/home/ravivl/PycharmProjects/db/2/newDataFolder"
+# dst = "/home/ravivl/PycharmProjects/db/2/DataFolder"
 # shutil.copytree(src,dst)
 
 ## update XML element text
@@ -30,8 +30,8 @@ import os
 
 ## update XML element attribute
 # xmlFile = xml.etree.ElementTree.parse('/home/ravivl/PycharmProjects/db/1/file.xml')
-# sh = xmlFile.find('.//item[2]/price')
-# sh.set('attributeName', 'value')
+# sh = xmlFile.find('.//item')
+# sh.set('orderid', '101010')
 
 ## add Element to XML
 # xmlFile = xml.etree.ElementTree.parse('/home/ravivl/PycharmProjects/db/1/file.xml')
@@ -41,7 +41,7 @@ import os
 # new_tag.attrib['y'] = 'abc'
 
 ## Write back to file
-# xmlFile.write('/home/ravivl/PycharmProjects/db/1/file_new.xml')
+# xmlFile.write('/home/ravivl/PycharmProjects/db/2/file.xml')
 
 # run CLI commands
-# os.system ('ls')
+os.system ('ifconfig')
