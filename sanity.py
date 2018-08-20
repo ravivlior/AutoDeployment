@@ -1,5 +1,6 @@
 import shutil
 import xml.etree.ElementTree
+import os
 
 ## copy files
 # src = "/home/ravivl/PycharmProjects/db/1/data.txt"
@@ -21,11 +22,14 @@ import xml.etree.ElementTree
 # sh.set('attributeName', 'value')
 
 ## add Element to XML
-# new_tag = xml.etree.ElementTree.SubElement('.//item[2]/price', 'newElement')
+# xmlFile = xml.etree.ElementTree.parse('/home/ravivl/PycharmProjects/db/1/file.xml')
+# new_tag = xml.etree.ElementTree.SubElement(xmlFile.find('.//item[2]'), 'newElement')
 # new_tag.text = 'body text'
 # new_tag.attrib['x'] = '1' # must be str; cannot be an int
 # new_tag.attrib['y'] = 'abc'
 
-# Write back to file
-# et.write('file.xml')
-xmlFile.write('/home/ravivl/PycharmProjects/db/1/file_new.xml')
+## Write back to file
+# xmlFile.write('/home/ravivl/PycharmProjects/db/1/file_new.xml')
+
+# run CLI commands
+os.system ('ls')
