@@ -7,6 +7,18 @@ import os
 # dst = "/home/ravivl/PycharmProjects/db/2"
 # shutil.copy2(src,dst)
 
+## delete file
+# if os.path.exists('/home/ravivl/PycharmProjects/db/1/file_new.xml'):
+#   os.remove('/home/ravivl/PycharmProjects/db/1/file_new.xml')
+# else:
+#   print("The file does not exist")
+
+## delete folder
+# shutil.rmtree('/home/ravivl/PycharmProjects/db/1/dataFolder')
+
+## create folder
+#os.mkdir ('/home/ravivl/PycharmProjects/db/1/dataFolder')
+
 ## copy folder
 # src = "/home/ravivl/PycharmProjects/db/1/dataFolder"
 # dst = "/home/ravivl/PycharmProjects/db/2/newDataFolder"
@@ -32,4 +44,4 @@ import os
 # xmlFile.write('/home/ravivl/PycharmProjects/db/1/file_new.xml')
 
 # run CLI commands
-os.system ('ls')
+# os.system ('ls')
