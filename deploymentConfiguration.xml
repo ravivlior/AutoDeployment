@@ -3,7 +3,7 @@
     <endpoint>
         <name></name>
         <ip></ip>
-        <config type="du"></config>
+        <config type=""></config>
 
     </endpoint>
 </endPoints>
